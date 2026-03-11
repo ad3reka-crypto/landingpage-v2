@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portable Range Hood - Masak Tanpa Asap</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fef2f2',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+        }
+        .pulse-btn {
+            animation: pulse-red 2s infinite;
+        }
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+    </style>
+</head>
+
+<body class="text-gray-800 antialiased">
+
+    <!-- Container Utama -->
+    <main class="max-w-2xl mx-auto bg-white min-h-screen shadow-2xl relative pb-10">
+
+        <!-- Hero Section -->
+        <header class="relative bg-gradient-to-b from-gray-50 to-white pt-10 pb-8 px-6 text-center">
+            <div class="inline-block bg-brand-50 text-brand-600 font-semibold px-4 py-1 rounded-full text-sm mb-4 border border-brand-100">
+                ⭐ Solusi Dapur Masa Kini
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-3">
+                Mini Portable Range Hood
+            </h1>
+            <p class="text-lg text-gray-600 mb-6 font-medium">
+                Masak & BBQ di Dalam Rumah Tanpa Asap Mengganggu!
+            </p>
+            
+            <!-- Gallery Produk (Responsive 3 Kolom) -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                <!-- Gambar 1 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                    <img src="produk1.jpg" alt="Mini Range Hood Produk 1" class="w-full h-64 sm:h-48 object-cover">
+                </div>
+                <!-- Gambar 2 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                    <img src="produk2.jpg" alt="Mini Range Hood Produk 2" class="w-full h-64 sm:h-48 object-cover">
+                </div>
+                <!-- Gambar 3 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                    <img src="produk3.jpg" alt="Mini Range Hood Produk 3" class="w-full h-64 sm:h-48 object-cover">
+                </div>
+            </div>
+
+            <!-- Manfaat Singkat -->
+            <div class="bg-green-50 text-green-700 rounded-xl p-3 mb-6 inline-flex items-center gap-2 border border-green-200">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-600"></i>
+                <span class="font-semibold text-sm">Asap Langsung Tersedot Habis!</span>
+            </div>
+
+            <a href="https://wa.me/628123456789" class="pulse-btn block w-full bg-brand-500 hover:bg-brand-600 text-white font-bold text-xl py-4 px-6 rounded-xl transition duration-300 shadow-[0_8px_20px_-5px_rgba(239,68,68,0.5)]">
+                PESAN SEKARANG
+            </a>
+            <p class="text-sm text-gray-500 mt-3 flex items-center justify-center gap-1">
+                <i data-lucide="shield-check" class="w-4 h-4"></i> Garansi Uang Kembali
+            </p>
+        </header>
+
+        <!-- Garis Pemisah -->
+        <div class="h-2 w-full bg-gray-50"></div>
+
+        <!-- Masalah Section -->
+        <section class="px-6 py-8">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-900">Sering Terganggu Saat Masak & BBQ? 😫</h2>
+            <div class="bg-red-50 border border-red-100 rounded-2xl p-5 space-y-4">
+                <div class="flex items-start gap-3">
+                    <div class="bg-red-100 p-2 rounded-full mt-1"><i data-lucide="wind" class="w-5 h-5 text-red-600"></i></div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Dapur Penuh Asap</h3>
+                        <p class="text-gray-600 text-sm">Niat mau makan enak malah sesak napas karena asap mengepul.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="bg-red-100 p-2 rounded-full mt-1"><i data-lucide="flame" class="w-5 h-5 text-red-600"></i></div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Mata Pedih</h3>
+                        <p class="text-gray-600 text-sm">Asap panggangan bikin mata perih dan berair, merusak suasana.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="bg-red-100 p-2 rounded-full mt-1"><i data-lucide="home" class="w-5 h-5 text-red-600"></i></div>
+                    <div>
+                        <h3 class="font-bold text-gray-900">Bau Nempel Dimana-mana</h3>
+                        <p class="text-gray-600 text-sm">Bau masakan menyebar ke ruang tamu, kamar, hingga menempel di baju.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solusi Section -->
+        <section class="px-6 py-8 bg-gray-900 text-white mt-4">
+            <h2 class="text-2xl font-bold text-center mb-4">Ini Solusinya! ✨</h2>
+            <p class="text-center text-gray-300 mb-6">
+                <strong class="text-white">Mini Portable Range Hood</strong> adalah alat penghisap asap revolusioner yang menyerap asap dan bau dengan cepat, kapanpun dan dimanapun.
+            </p>
+            
+            <p class="font-semibold mb-3 text-brand-500 text-center">Sangat Cocok Untuk:</p>
+            <div class="grid grid-cols-2 gap-3 text-sm font-medium">
+                <div class="bg-gray-800 p-3 rounded-lg flex items-center justify-center gap-2 border border-gray-700">
+                    🥩 BBQ Indoor
+                </div>
+                <div class="bg-gray-800 p-3 rounded-lg flex items-center justify-center gap-2 border border-gray-700">
+                    🏢 Masak di Apartemen
+                </div>
+                <div class="bg-gray-800 p-3 rounded-lg flex items-center justify-center gap-2 border border-gray-700">
+                    🥘 Dapur Kecil/Kos
+                </div>
+                <div class="bg-gray-800 p-3 rounded-lg flex items-center justify-center gap-2 border border-gray-700">
+                    🍲 Hotpot di Meja
+                </div>
+            </div>
+        </section>
+
+        <!-- Keunggulan Section -->
+        <section class="px-6 py-10">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-900">Keunggulan Produk</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-brand-500 transition">
+                    <div class="bg-brand-50 p-3 rounded-lg text-brand-600">
+                        <i data-lucide="fan" class="w-6 h-6"></i>
+                    </div>
+                    <div class="font-semibold text-gray-800">Daya Hisap Kuat</div>
+                </div>
+
+                <div class="flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-brand-500 transition">
+                    <div class="bg-brand-50 p-3 rounded-lg text-brand-600">
+                        <i data-lucide="battery-charging" class="w-6 h-6"></i>
+                    </div>
+                    <div class="font-semibold text-gray-800">Baterai Rechargeable</div>
+                </div>
+
+                <div class="flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-brand-500 transition">
+                    <div class="bg-brand-50 p-3 rounded-lg text-brand-600">
+                        <i data-lucide="briefcase" class="w-6 h-6"></i>
+                    </div>
+                    <div class="font-semibold text-gray-800">Portable & Ringan</div>
+                </div>
+
+                <div class="flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:border-brand-500 transition">
+                    <div class="bg-brand-50 p-3 rounded-lg text-brand-600">
+                        <i data-lucide="volume-x" class="w-6 h-6"></i>
+                    </div>
+                    <div class="font-semibold text-gray-800">Suara Halus (Bising Rendah)</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimoni Section -->
+        <section class="px-6 py-8 bg-gray-50">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-900">Kata Mereka Yang Sudah Beli</h2>
+            
+            <div class="space-y-4">
+                <!-- Card Testimoni 1 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex text-yellow-400 mb-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-3">"Suka banget! BBQ-an bareng keluarga di ruang TV jadi nggak penuh asap lagi. Praktis banget bisa dipindah-pindah."</p>
+                    <p class="font-bold text-sm text-gray-900">- Budi Setiawan</p>
+                </div>
+
+                <!-- Card Testimoni 2 -->
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex text-yellow-400 mb-2">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-3">"Alatnya kecil, awalnya ragu, tapi ternyata daya hisapnya kuat banget! Worth it parah buat yang tinggal di apartemen."</p>
+                    <p class="font-bold text-sm text-gray-900">- Anita Kusuma</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Section & CTA Bottom -->
+        <section class="px-6 py-10 text-center">
+            <div class="bg-brand-50 border-2 border-brand-200 p-6 rounded-2xl mb-6">
+                <span class="bg-brand-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 inline-block">Promo Spesial Hari Ini</span>
+                <h2 class="text-2xl font-extrabold text-gray-900 mb-2">Diskon Khusus & Gratis Ongkir!</h2>
+                <p class="text-gray-700 mb-4">Jangan sampai kehabisan. Stok promo sangat terbatas dan bisa habis sewaktu-waktu.</p>
+                
+                <a href="https://wa.me/628123456789" class="pulse-btn inline-flex items-center justify-center gap-2 w-full bg-brand-500 hover:bg-brand-600 text-white font-bold text-lg py-4 px-6 rounded-xl transition duration-300">
+                    <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                    AMBIL PROMO SEKARANG
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-6 border-t border-gray-100 text-gray-500 text-sm">
+            <p>&copy; 2026 Mini Portable Range Hood. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Inisialisasi Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
